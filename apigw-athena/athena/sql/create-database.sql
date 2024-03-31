@@ -1,0 +1,2 @@
+CREATE DATABASE IF NOT EXISTS ${self:custom.DATABASE_NAME}
+LOCATION 's3://${self:custom.s3.LOGS_BUCKET}/${self:custom.ATHENA_TABLE_NAME}/'
